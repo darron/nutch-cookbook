@@ -1,0 +1,11 @@
+--- crawl.orig	2013-04-04 16:27:32.096785201 +0000
++++ crawl	2013-04-04 16:27:57.544051235 +0000
+@@ -166,7 +166,7 @@
+   fi
+ 
+   echo "Indexing $SEGMENT on SOLR index -> $SOLRURL"
+-  $bin/nutch solrindex $SOLRURL $CRAWL_PATH/crawldb -linkdb $CRAWL_PATH/linkdb $SEGMENT
++  $bin/nutch solrindex $SOLRURL $CRAWL_PATH/crawldb -linkdb $CRAWL_PATH/linkdb $CRAWL_PATH/segments/$SEGMENT
+   
+   if [ $? -ne 0 ] 
+    then exit $?
