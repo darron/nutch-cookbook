@@ -2,10 +2,6 @@
 # Cookbook Name:: nutch
 # Recipe:: default
 #
-# Copyright (C) 2013 Darron Froese
-# 
-# All rights reserved - Do Not Redistribute
-#
 
 # Make sure Java's installed.
 include_recipe "java::default"
